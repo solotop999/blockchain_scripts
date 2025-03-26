@@ -51,8 +51,8 @@ cd try-devnet/packages/contract/ || exit
 echo "Deploying contract..."
 bash script/deploy.sh
 
+cd /root/try-devnet/packages/cli/
 curl -fsSL https://bun.sh/install | bash
-cd try-devnet/packages/cli/
 bun install
 
 ### Interact with an encrypted contract
