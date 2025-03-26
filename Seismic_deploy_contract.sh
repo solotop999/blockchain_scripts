@@ -28,14 +28,11 @@ echo "Installing sfoundryup..."
 curl -L -H "Accept: application/vnd.github.v3.raw" \
      "https://api.github.com/repos/SeismicSystems/seismic-foundry/contents/sfoundryup/install?ref=seismic" | bash
 
-source ~/.bashrc || true
-source /root/.bashrc || true
-
 sleep 2
 
 # Run sfoundryup
 echo "Running sfoundryup..."
-bash -i -c "sfoundryup"
+sfoundryup
 
 # Clone try-devnet repository with submodules
 if [ ! -d "try-devnet" ]; then
