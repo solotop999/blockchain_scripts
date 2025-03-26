@@ -22,12 +22,15 @@ fi
 
 rustc --version
 
+sleep 2
 # Install sfoundryup
 echo "Installing sfoundryup..."
 curl -L -H "Accept: application/vnd.github.v3.raw" \
      "https://api.github.com/repos/SeismicSystems/seismic-foundry/contents/sfoundryup/install?ref=seismic" | bash
 
 source ~/.bashrc
+
+sleep 2
 
 # Run sfoundryup
 echo "Running sfoundryup..."
