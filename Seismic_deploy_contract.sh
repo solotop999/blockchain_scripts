@@ -29,8 +29,15 @@ curl -L -H "Accept: application/vnd.github.v3.raw" \
      "https://api.github.com/repos/SeismicSystems/seismic-foundry/contents/sfoundryup/install?ref=seismic" | bash
 
 sleep 2
+export PATH="$HOME/.seismic/bin:$PATH"
+echo 'export PATH="$HOME/.seismic/bin:$PATH"' >> ~/.bashrc
 
-# Run sfoundryup
+# Source bashrc safely
+echo "Sourcing ~/.bashrc..."
+set +u  # Temporarily disable unbound variable checking
+source ~/.bashrc
+set -u  # Re-enable it
+
 echo "Running sfoundryup..."
 sfoundryup
 
