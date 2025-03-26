@@ -35,7 +35,7 @@ sleep 2
 
 # Run sfoundryup
 echo "Running sfoundryup..."
-sfoundryup
+bash -i -c "sfoundryup"
 
 # Clone try-devnet repository with submodules
 if [ ! -d "try-devnet" ]; then
