@@ -9,7 +9,7 @@ cd
 # Update and install required dependencies
 echo "Updating system and installing dependencies..."
 sudo apt update && sudo apt upgrade -y
-sudo apt install -y curl git build-essential jq
+sudo apt install -y curl git build-essential jq unzip
 
 # Install Rust
 if ! command -v rustc &> /dev/null; then
