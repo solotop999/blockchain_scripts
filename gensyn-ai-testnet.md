@@ -51,6 +51,7 @@ sudo apt-get install docker-ce docker-ce-cli containerd.io docker-buildx-plugin 
 
 # check Docker status
 docker --version
+```
 ![image](https://github.com/user-attachments/assets/c395fc13-f854-4590-ae76-8b726f2d5cad)
 
 
