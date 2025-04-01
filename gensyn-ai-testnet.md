@@ -210,7 +210,7 @@ Wattinng and It will ask you this question : `Would you like to push models you 
 
 ## 7) Run Swarm Dashboard UI (Optional)
 ```bash
-cd $HOME cd rl-swarm
+cd $HOME && cd rl-swarm
 ```
 ```bash
 docker compose up -d --build
