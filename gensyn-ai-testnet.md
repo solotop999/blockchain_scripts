@@ -15,7 +15,7 @@ Note: You can run the node without a GPU using CPU-only mode.
 
 Access to root:
 ```
-su root
+sudo su
 ```
 
 ## 1) Install Dependencies
@@ -216,11 +216,15 @@ Open the dashboard in browser via:
 
 ![image](https://github.com/user-attachments/assets/6ff687fc-c0fb-4592-be74-9c2e82f7b73c)
 
----
+--------
+
+**Rent GPU from Hyperbolic and run gensyn-ai**
 # Run on Hyperbolic GPUs
 * To install the node on **Hyperbolic** check this [Guide: Rent & Connect to GPU](https://github.com/0xmoei/Hyperbolic-GPU)
 * Add this flag: `-L 3000:localhost:3000` in front of your Hyperbolic's `SSH-command`, this will allow you to access to login page via local system.
 
-  source: @0xmoei <3
+after rent GPUs, you can connect to vps
+![image](https://github.com/user-attachments/assets/976ca1ee-2d52-48bb-a89a-1838b7231f90)
 
-![Screenshot_677](https://github.com/user-attachments/assets/ea4fc4c1-0993-4fa5-b573-33f256bc639b)
+and install it
+
