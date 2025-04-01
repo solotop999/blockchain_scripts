@@ -13,6 +13,17 @@ RL Swarm is a fully open-source framework developed by GensynAI for building rei
 | **Python Version**                  | Python >= 3.10 (For Mac, you may need to upgrade) 
 Note: You can run the node without a GPU using CPU-only mode.
 
+
+**Rent GPUs and VPS from Hyperbolic and run gensyn-ai**
+# Run on Hyperbolic GPUs
+* To install the node on **Hyperbolic** check this [Guide: Rent & Connect to GPU](https://github.com/0xmoei/Hyperbolic-GPU)
+* Add this flag: `-L 3000:localhost:3000` in front of your Hyperbolic's `SSH-command`, this will allow you to access to login page via local system.
+
+after rent GPUs, you can connect to vps
+![image](https://github.com/user-attachments/assets/976ca1ee-2d52-48bb-a89a-1838b7231f90)
+
+and install it
+
 Access to root:
 ```
 sudo su
@@ -219,13 +230,4 @@ Open the dashboard in browser via:
 
 --------
 
-**Rent GPU from Hyperbolic and run gensyn-ai**
-# Run on Hyperbolic GPUs
-* To install the node on **Hyperbolic** check this [Guide: Rent & Connect to GPU](https://github.com/0xmoei/Hyperbolic-GPU)
-* Add this flag: `-L 3000:localhost:3000` in front of your Hyperbolic's `SSH-command`, this will allow you to access to login page via local system.
-
-after rent GPUs, you can connect to vps
-![image](https://github.com/user-attachments/assets/976ca1ee-2d52-48bb-a89a-1838b7231f90)
-
-and install it
 
