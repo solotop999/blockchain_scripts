@@ -201,13 +201,6 @@ Wattinng and It will ask you this question : `Would you like to push models you 
 
 ---
 
-### Screen commands
-* Minimize: `CTRL` + `A` + `D`
-* Return: `screen -r swarm`
-* Stop and Kill: `screen -XS swarm quit`
-
----
-
 ## 7) Run Swarm Dashboard UI (Optional)
 ```bash
 cd $HOME && cd rl-swarm
