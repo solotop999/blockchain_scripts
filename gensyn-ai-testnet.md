@@ -32,33 +32,33 @@ sudo su
 ## 1) Install Dependencies
 **1. Update System Packages**
 ```bash
-sudo apt-get update && sudo apt-get upgrade -y
+apt-get update && apt-get upgrade -y
 ```
 **2. Install General Utilities and Tools**
 ```bash
-sudo apt install tmux curl iptables build-essential git wget lz4 jq make gcc nano automake autoconf tmux htop nvme-cli libgbm1 pkg-config libssl-dev libleveldb-dev tar clang bsdmainutils ncdu unzip libleveldb-dev  -y
+apt install tmux curl iptables build-essential git wget lz4 jq make gcc nano automake autoconf tmux htop nvme-cli libgbm1 pkg-config libssl-dev libleveldb-dev tar clang bsdmainutils ncdu unzip libleveldb-dev  -y
 ```
 
 **3. Install Docker**
 ```bash
 # Remove old Docker installations
-for pkg in docker.io docker-doc docker-compose podman-docker containerd runc; do sudo apt-get remove $pkg; done
+for pkg in docker.io docker-doc docker-compose podman-docker containerd runc; do apt-get remove $pkg; done
 
 # Add Docker repository
-sudo apt-get update -y
-sudo apt-get install ca-certificates curl gnupg -y
-sudo install -m 0755 -d /etc/apt/keyrings
-curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo gpg --dearmor -o /etc/apt/keyrings/docker.gpg
-sudo chmod a+r /etc/apt/keyrings/docker.gpg
+ apt-get update -y
+ apt-get install ca-certificates curl gnupg -y
+ install -m 0755 -d /etc/apt/keyrings
+curl -fsSL https://download.docker.com/linux/ubuntu/gpg |  gpg --dearmor -o /etc/apt/keyrings/docker.gpg
+ chmod a+r /etc/apt/keyrings/docker.gpg
 
 echo \
   "deb [arch="$(dpkg --print-architecture)" signed-by=/etc/apt/keyrings/docker.gpg] https://download.docker.com/linux/ubuntu \
   "$(. /etc/os-release && echo "$VERSION_CODENAME")" stable" | \
-  sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
+   tee /etc/apt/sources.list.d/docker.list > /dev/null
 
 # Install Docker
-sudo apt-get update -y
-sudo apt-get install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin -y
+ apt-get update -y
+ apt-get install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin -y
 
 # check Docker status
 docker --version
@@ -68,10 +68,10 @@ docker --version
 
 **4. Install Python**
 ```bash
-sudo apt-get install python3 python3-pip -y
+ apt-get install python3 python3-pip -y
 ```
 ```
-sudo apt install python3.10-venv -y
+ apt install python3.10-venv -y
 ```
 ```
 python3 --version
@@ -82,10 +82,10 @@ python3 --version
 
 **5. Install Node**
 ```
-curl -fsSL https://deb.nodesource.com/setup_23.x | sudo -E bash -
+curl -fsSL https://deb.nodesource.com/setup_23.x |  -E bash -
 ```
 ```
-sudo apt-get install -y nodejs
+ apt-get install -y nodejs
 ```
 ```
 node --version
@@ -93,7 +93,7 @@ node --version
 ![image](https://github.com/user-attachments/assets/043aec93-159c-459a-a64f-c88c20649377)
 
 ```bash
-sudo npm install -g yarn
+ npm install -g yarn
 ```
 ```bash
 yarn -v
