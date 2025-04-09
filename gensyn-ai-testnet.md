@@ -82,7 +82,7 @@ python3 --version
 
 **5. Install Node**
 ```
-curl -fsSL https://deb.nodesource.com/setup_23.x |  -E bash -
+curl -fsSL https://deb.nodesource.com/setup_23.x | bash -
 ```
 ```
  apt-get install -y nodejs
